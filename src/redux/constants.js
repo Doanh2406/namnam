@@ -1,0 +1,12 @@
+export const NEW_PERSON = "NEW_PERSON";
+export const NEW_PERSON_FAIL="NEWP_PERSON_FAIL";
+
+
+export const EDIT_PERSON = "EDIT_PERSON";
+export const EDIT_PERSON_FAIL = "EDIT_PERSON_FAIL";
+
+export const DELETE_PERSON = "DELETE_PERSON";
+export const DELETE_PERSON_FAIL = "DELETE_PERSON_FAIL";
+
+export const GET_PERSON = "GET_PERSON"
+export const GET_PERSON_FAIL = "GET_PERSON_FAIL"

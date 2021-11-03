@@ -1,0 +1,87 @@
+.home-container {
+    width: 80%;
+    margin: 30px auto;
+
+    .home-nav {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 3px;
+        background-color: map-get($colors, brand-nodejs);
+
+        >span {
+
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+
+        .home-nav__buttom {
+            // margin: 0px 10px;
+            height: 40px;
+            margin-right: 10px;
+            background-color: rgb(24, 31, 133);
+            border-radius: 5px;
+            text-decoration: none;
+
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    .home-table {
+        width: 100%;
+
+        .table-header {
+            width: 100%;
+            border: 1px solid black;
+
+            >tr {
+                >th {
+                    border: 1px solid black;
+                    text-transform: uppercase;
+                }
+
+                >td {
+                    border: 1px solid black;
+                   
+                }
+
+                .list-button__edit {
+                    background-color: rgb(184, 184, 101);
+                    color: white;
+                    margin: 5px 10px;
+                    border-radius: 5px;
+                    padding: 5px;
+                    font-size: 14px;
+                    text-transform: uppercase;
+
+                }
+                .list-button__delete {
+                    background-color: rgb(196, 25, 25);
+                    color: white;
+
+                    margin: 5px 10px;
+
+                    border-radius: 5px;
+                    padding: 5px;
+                    font-size: 14px;
+                    text-transform: uppercase;
+
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+// list

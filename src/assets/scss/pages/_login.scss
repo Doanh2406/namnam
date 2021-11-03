@@ -18,7 +18,7 @@
   }
   .form-login {
     padding: 30px;
-    background-color: map-get($colors, white);
+    background-color: map-get($colors, brand-js);
     .form-error {
       color: map-get($colors, txt-error);
     }
