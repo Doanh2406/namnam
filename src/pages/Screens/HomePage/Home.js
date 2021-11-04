@@ -7,27 +7,26 @@ import { useDispatch, useSelector } from "react-redux";
 
 export default function Home() {
   const dispatch = useDispatch();
-
   const member = useSelector((state) => state.member);
   const { persons } = member;
-  console.log(persons);
+
   const [members, setMembers] = useState(() => {
     const per = JSON.parse(localStorage.getItem("member"));
-    console.log(per);
     return per;
   });
-  console.log(member)
+  
   useEffect(() => {
-    if (persons && persons.length > 0) {
-      console.log("lan")
+    if (persons && persons.length !== 0) {
       setMembers(persons);
+    }
+    if(persons.length === 0){
+      setMembers(false)
     }
   }, [persons]);
   const [edit, setEdit] = useState(false);
 
   const handleDelete = (index) => {
     dispatch(deletePerson(index));
-    console.log(index)
   };
   const handleEdit = async (index) => {
     setEdit(index);
