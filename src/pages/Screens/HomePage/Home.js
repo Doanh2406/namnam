@@ -18,9 +18,8 @@ export default function Home() {
   });
   console.log(member)
   useEffect(() => {
-    console.log("EF run");
-    if (persons && persons.length !== 0) {
-      console.log("run i");
+    if (persons && persons.length > 0) {
+      console.log("lan")
       setMembers(persons);
     }
   }, [persons]);
